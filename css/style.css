@@ -1,0 +1,44 @@
+.wrap {
+    background: url(../img/pc.png) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.wrap>.contents {
+    position: absolute;
+    text-align: center;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrap>.contents>p {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.wrap>.contents>div>a>img {
+    width: 155px;
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        background: url(../img/mobile.png) center no-repeat;
+        background-size: cover;
+    }
+    .wrap>.contents {
+        bottom: auto;
+        top: 70px;
+        width: 100%;
+    }
+    .wrap>.contents>div>a>img {
+        display: block;
+        margin: auto;
+    }
+}
